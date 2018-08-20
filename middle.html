@@ -1,9 +1,13 @@
-<html>
 <head>This is middile</head>
 <body>
-
-           <span class='wp_keywordlink_affiliate'><a href="http://lxy.me/tag/proxy" title="查看 proxy 中的全部文章" target="_blank">proxy</a></span>_buffer_size 64k;
-          <span class='wp_keywordlink_affiliate'><a href="http://lxy.me/tag/proxy" title="查看 proxy 中的全部文章" target="_blank">proxy</a></span>_buffers   32 32k;
-          <span class='wp_keywordlink_affiliate'><a href="http://lxy.me/tag/proxy" title="查看 proxy 中的全部文章" target="_blank">proxy</a></span>_busy_buffers_size 128k;
+  <script>
+    var ws = new WebSocket('ws://localhost:40510');
+    ws.onopen = function () {
+        console.log('websocket is connected ...')
+        ws.send('connected')
+    }
+    ws.onmessage = function (ev) {
+        console.log(ev);
+    }
+</script>
 </body>
-</html>
