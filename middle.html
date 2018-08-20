@@ -1,7 +1,7 @@
 <head>This is middile</head>
 <body>
   <script>
-    var ws = new WebSocket('ws://test.websocket.jnjadc.com:40510');
+    var ws = new WebSocket('ws://0.0.0.0:40510');
     ws.onopen = function () {
         console.log('websocket is connected ...')
         ws.send('connected')
