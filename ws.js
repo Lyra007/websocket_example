@@ -1,5 +1,5 @@
 var WebSocketServer = require('ws').Server,
-  wss = new WebSocketServer({port: 8282})
+  wss = new WebSocketServer({port: 40510})
 
 wss.on('connection', function (ws) {
   ws.send(`${new Date()}`);
